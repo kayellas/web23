@@ -34,3 +34,20 @@ app çalıştırması için npm start
 
 mysql bağlantısı yapıldıktan sonra şifre gizleme özelliği olan "dotenv" yükle.
 yeni bir dosya  ".env" ile gizli veriler korunur.
+
+router ile bir işlemi gerçekleştirmek için yönlendirir. 
+register=yeni kayıt
+login= giriş
+
+router standart kavramlar:
+
+* post: veri gönderme
+* get: veri alma
+* put: veri güncelleme
+* patch: veri güncelleme
+* delete: veri silme
+
+
+routers= hangi controlller olacağını söyler.
+
+

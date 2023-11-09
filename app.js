@@ -1,13 +1,21 @@
 const express = require('express')
-const db_connect=require('./db/mysql.connect')
+const db_connect=require('./db/mysql_connect')
+const router=require('./routers')
+
 require('dotenv/config')
 const app = express()
 //index.html
 app.get('/', function (req, res) {
-  res.send('ana sayfa World')
+  res.send('ana sayfa')
 })
 app.get('/app', function (req, res) {
-  res.send('app World')
+  res.send('app sayfası')
 })
 
+//Midllewares
+
+app.use(express.json())
+app.use(express.json({limit:'50mb'}))
+app.use(express.json({limit:'50mb', extended:true,parameterLimit:5000}))
+app.use('/api',router)
 app.listen(process.env.PORT)
