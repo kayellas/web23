@@ -244,3 +244,4 @@ const sayi=sayilar.find(function(sayilar){
     return sayilar%2==0
 })
 console.log(sayi)
+
