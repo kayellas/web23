@@ -10,12 +10,18 @@ app.get('/', function (req, res) {
 })
 app.get('/app', function (req, res) {
   res.send('app sayfası')
-})
+  })
 
 //Midllewares
 
+/*
 app.use(express.json())
 app.use(express.json({limit:'50mb'}))
 app.use(express.json({limit:'50mb', extended:true,parameterLimit:5000}))
+app.use('/api',router)
+app.listen(process.env.PORT) 
+*/
+
+app.use(express.json({limit:'50mb',extended:true,parameterLimit:50000}))
 app.use('/api',router)
 app.listen(process.env.PORT)
