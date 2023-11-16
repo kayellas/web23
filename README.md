@@ -50,4 +50,6 @@ router standart kavramlar:
 
 routers= hangi controlller olacağını söyler.
 
+---16.11.23---
+
 
