@@ -9,4 +9,4 @@ const register=async(req,res)=>{
     console.log(req,body)
 }
 
-module.exports=Router
+module.exports={login,register}
