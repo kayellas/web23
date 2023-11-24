@@ -51,5 +51,7 @@ router standart kavramlar:
 routers= hangi controlller olacağını söyler.
 
 ---16.11.23---
+veri tabanı oluşturuldu.
+veriler db aktarıldı controller.js dosyası ile
 
 
