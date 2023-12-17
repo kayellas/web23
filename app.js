@@ -59,3 +59,7 @@ app.get('/musteri_getir', function (req, res) {
 app.use(express.json({limit:'50mb',extended:true,parameterLimit:50000}))
 app.use('/api',router)
 app.listen(process.env.PORT)
+
+// app.listen(3000, () => {
+  console.log('Uygulama 3000 numaralı bağlantı noktasında dinleniyor...');
+// });
