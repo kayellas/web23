@@ -66,4 +66,15 @@ const  getChartData=(req,res)=>{
         res.json(data)
     }
 
-module.exports={login,register,getChartData}
+const musteri_getir=(req,res)=>{
+    dbConn.query("SELECT * FROM kullanicilar",(error,result))=>{
+        if (error){
+            console.log("Sunucu yanıt vermiyor")
+            return new Response().error500(res)
+            } else {
+                res.json({data:result})
+        }
+    }
+}
+
+module.exports={login,register,getChartData,musteri_getir}

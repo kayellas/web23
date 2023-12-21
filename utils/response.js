@@ -24,6 +24,8 @@ class Response{
             message:"Kullanıcı Girişi Başarılı"
         })
     }
+
+
     
 }
 module.exports=Response

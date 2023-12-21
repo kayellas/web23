@@ -24,6 +24,7 @@ router.get("/grafik",getChartData)
 router.post("/register",register)
 //post:veri gönderme get:veri alma put:veri güncelleme patch:veri güncelleme
 //delete:veri silme
+router.get("/musteri_getir",musteri_getir)
 
 
 module.exports=router
